@@ -190,7 +190,7 @@
           <div class="container">
             <div class="navbar-header">
               <ul>
-                <li><p style="color: white ; font-family:courier ; font-style: bold"> TheBigDay </p></li>
+                <li><p style="color: white ; font-family:courier ; font-style: bold"> BOF! </p></li>
                 <li> <a> SHOPPING </a>
                   <ul>
                     <li v-on:click = "currentPage3 = 'Homme'"> <a> Homme </a></li>
@@ -256,7 +256,7 @@
 </section>
 
 <section v-else-if="currentPage3 === 'Homme'" id="Homme">
-  <h1>HOMME</h1>
+  <h1 align="center">HOMME</h1>
   <div class="container">
     <div v-for="(produit, index) of produit" v-if="produit.type === 'Homme'"class="row">
 
@@ -280,7 +280,7 @@
 </section>
 
 <section v-else-if="currentPage3 === 'Femme'" id="Femme">
-  <h1>Femme</h1>
+  <h1 align="center">Femme</h1>
   <div class="container">
     <div v-for="(produit, index) of produit" v-if="produit.type === 'Femme'"class="row">
 
@@ -305,7 +305,7 @@
 
 
 <section v-else-if="currentPage3 === 'Enfant'" id="Enfant">
-  <p>KIDS </p>
+  <h1 align="center">KIDS </h1>
   <div class="container">
     <div v-for="(produit, index) of produit" v-if="produit.type === 'Enfant'"class="row">
 
